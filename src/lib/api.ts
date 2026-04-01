@@ -1,4 +1,4 @@
-const BASE_URL = "https://zorvyn-assignment-be.onrender.com";
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 export const getToken = () => localStorage.getItem("token");
 export const setToken = (token: string) => localStorage.setItem("token", token);
